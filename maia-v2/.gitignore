@@ -1,0 +1,30 @@
+# Maia v2 Python subproject artifacts
+
+# Data snapshots (parquet, raw dumps, caches) — never commit
+data/
+*.parquet
+*.pgn
+*.pgn.zst
+*.csv.gz
+.http_cache/
+
+# Model checkpoints / weights
+*.pt
+*.pth
+*.ckpt
+*.onnx
+checkpoints/
+runs/
+wandb/
+
+# Local config with secrets / API keys
+config/settings.toml
+
+# Python tooling
+.venv/
+.uv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
